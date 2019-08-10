@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+p,
+div,
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Tahoma";
+}
+body {
+  padding: 50px;
+}
+.tab-container .tab-list {
+  overflow: auto;
+}
+.tab-container .tab-list .tab {
+  display: inline-block;
+  float: left;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #888;
+}
+.tab-container .tab-list .tab.active {
+  color: #000;
+}
+.tab-container .content-wrap {
+  margin-top: 10px;
+  position: relative;
+}
+.tab-container .content-wrap .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.tab-container .content-wrap .content.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+.tab-container .content-wrap .content > p {
+  line-height: 170%;
+}
